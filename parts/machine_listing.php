@@ -16,6 +16,7 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
+                                <th>#</th>
                                 <th width="35%" >Name</th>
                                 <th>Balance</th>
                                 <th>Rate</th>
@@ -25,6 +26,7 @@
                         </thead>
                         <tfoot>
                             <tr>
+                                <th>#</th>
                                 <th>Name</th>
                                 <th>Balance</th>
                                 <th>Rate</th>
@@ -58,6 +60,7 @@
 
                                         echo "
                                             <tr>
+                                                <td>".$row['Id']."</td>
                                                 <td>".$row['Name']."</td>
                                                 <td>".$row['Balance']."</td>
                                                 <td>".$rateLink."</td>
