@@ -58,7 +58,7 @@ function update_machine_balance($machineId, $bill50, $bill100, $bill200, $bill50
             die(sqlsrv_errors());
         }
 
-        $sqlQry = "UPDATE [System] SET [Balance] = ".$total." WHERE Id = ". $_GET['id'];
+        $sqlQry = "UPDATE [System] SET [Balance] = ".$total." WHERE Id = ". $machineId;
         $exec = sqlsrv_query($conn, $sqlQry);
 
         if($exec){
